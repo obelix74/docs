@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v7.2.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v7.2.1.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v7.2.0
+                    <i class="fas fa-download"></i> Download Plugin v7.2.1
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,24 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v7.2.1 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 7.2.1 - Thumbnail Hang Fix</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released February 11, 2026 - Fixed remaining freeze caused by missing thumbnail counter decrement.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Thumbnail Pending Counter Fix:</strong> Fixed missing counter decrement when 200x200 fallback thumbnail succeeded, which caused the plugin to hang indefinitely.</li>
+                        <li><strong>Safety Timeout:</strong> Added 60-second timeout to thumbnail collection phase to prevent infinite hangs.</li>
+                        <li><strong>Diagnostic Logging:</strong> Added periodic warning logs during thumbnail wait showing how many thumbnails are still pending.</li>
+                    </ul>
+                </div>
+
                 <!-- v7.2.0 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 7.2.0 - Freezing Issue Fix</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released February 10, 2026 - Fixed critical freezing issue caused by oversized thumbnails.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -628,7 +641,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v7.2.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v7.2.1.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
