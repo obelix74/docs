@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v7.3.3.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.0.0.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v7.3.3
+                    <i class="fas fa-download"></i> Download Plugin v8.0.0
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,27 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.0.0 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.0.0 - Major Stability & Keyword Overhaul</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released February 12, 2026 - 11 bug fixes, keyword limits raised to 75, scrollable results dialog, and shared AI parsing module.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Keyword Truncation Fix:</strong> Fixed critical bug where only 25-27 of 50+ AI-generated keywords were written to IPTC metadata.</li>
+                        <li><strong>Keyword Limits Raised:</strong> Maximum AI keywords and display slots increased from 25/30 to 75/75, supporting professional workflows.</li>
+                        <li><strong>Scrollable Results:</strong> AI results panel now scrolls, keeping action buttons visible even with 50+ keywords.</li>
+                        <li><strong>Batch Processing Crash Fix:</strong> Fixed gmatch crash when OpenAI returns keywords as arrays instead of strings.</li>
+                        <li><strong>11 Bug Fixes:</strong> Fixed sparse array issues, nil crashes in Ollama/Gemini/OpenAI, CSV export file leak, photo navigator crash, and more.</li>
+                        <li><strong>Shared AI Module:</strong> New AICommon.lua consolidates response parsing across all three providers, eliminating ~300 lines of duplicate code.</li>
+                    </ul>
+                </div>
+
                 <!-- v7.3.3 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 7.3.3 - Ollama Model Compatibility Fix</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released February 12, 2026 - Fixed empty fields when using newer Ollama vision models.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -690,7 +706,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v7.3.3.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.0.0.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
