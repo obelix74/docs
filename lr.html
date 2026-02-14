@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.0.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.1.0.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.0.0
+                    <i class="fas fa-download"></i> Download Plugin v8.1.0
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,26 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.1.0 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.1.0 - Ollama Thinking Models, Batch Thumbnails & Resolution Setting</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released February 14, 2026 - Fixed Ollama thinking models, 25-photo batch limit, and added configurable thumbnail resolution.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Ollama Thinking Models Fixed:</strong> qwen3-vl, llama3.2-vision, and other thinking models now return proper results instead of empty responses. Token budget increased from 1000 to 4096 with automatic &lt;think&gt; tag stripping.</li>
+                        <li><strong>25-Photo Limit Fixed:</strong> Selecting more than 25 photos now processes all of them. Thumbnail requests are batched to avoid overwhelming Lightroom's async system.</li>
+                        <li><strong>Configurable Thumbnail Resolution:</strong> New slider in Plugin Manager (400-2400px) to control the resolution of thumbnails sent to AI for analysis. Higher = more detail, lower = faster processing.</li>
+                        <li><strong>Fuji RAW Support:</strong> Added .RAF file detection for proper thumbnail sizing.</li>
+                        <li><strong>Enhanced Diagnostics:</strong> Better logging for Ollama response debugging, including thinking field detection and token exhaustion warnings.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.0.0 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.0.0 - Major Stability & Keyword Overhaul</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released February 12, 2026 - 11 bug fixes, keyword limits raised to 75, scrollable results dialog, and shared AI parsing module.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -706,7 +721,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.0.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.1.0.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
