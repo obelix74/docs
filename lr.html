@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.1.1.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.1.2.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.1.1
+                    <i class="fas fa-download"></i> Download Plugin v8.1.2
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,22 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.1.2 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.1.2 - GPS Location Accuracy Fix</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released February 24, 2026 - Fix for GPS location data being ignored by AI</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>GPS Location Accuracy:</strong> When GPS coordinates or IPTC location metadata are included in AI analysis, the AI now uses them as the authoritative location source instead of guessing from visual content alone. This fixes cases where the AI identified a visually similar but geographically incorrect location.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.1.1 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.1.1 - Ollama Thinking Models, Batch Thumbnails & Resolution Setting</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released February 15, 2026 - Bug fix with model selection in Ollama</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
