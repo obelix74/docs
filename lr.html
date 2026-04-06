@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.2.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.2.1.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.2.0
+                    <i class="fas fa-download"></i> Download Plugin v8.2.1
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,22 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.2.1 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.2.1 - Ollama Default Model Fix</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released April 5, 2026 - Fixed "llava:latest not found" error on fresh installs.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Ollama Default Model Bug:</strong> Removed the hard-coded <code>llava:latest</code> default. Users with fresh installs or who had never opened Plugin Manager were getting "Model 'llava:latest' not found" even after selecting a different model (e.g., <code>gemma3:4b</code>). The plugin now handles an unconfigured model gracefully and shows a clear message directing you to Plugin Manager to select one.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.2.0 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.2.0 - Dynamic Ollama Model List</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released April 5, 2026 - Ollama now queries your server for installed models instead of showing a fixed list.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
