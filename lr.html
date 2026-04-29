@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.2.1.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.3.0.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.2.1
+                    <i class="fas fa-download"></i> Download Plugin v8.3.0
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,23 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.3.0 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.3.0 - AiTagger Marker &amp; Larger Results Window</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released April 28, 2026 - Filter processed photos in Library; larger results dialog.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>AiTagger Marker:</strong> New option in Plugin Manager: "Add AiTagger marker to Instructions field". When enabled, writes <code>AiTagger: &lt;provider&gt; &lt;model&gt;</code> (e.g., <code>AiTagger: gemini gemini-2.5-flash</code>) to the IPTC Instructions field for every processed photo. Use Lightroom's Library Text Filter on Instructions to find or exclude already-processed photos, or to identify which AI model was used.</li>
+                        <li><strong>Larger Results Window:</strong> The results dialog is now taller by default (700px vs 450px), reducing the need to scroll to see all metadata fields.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.2.1 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.2.1 - Ollama Default Model Fix</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released April 5, 2026 - Fixed "llava:latest not found" error on fresh installs.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
