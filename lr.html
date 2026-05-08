@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.3.2.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.3.4.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.3.2
+                    <i class="fas fa-download"></i> Download Plugin v8.3.4
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,34 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.3.4 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.3.4 - Keyword Decoration Crash Fix</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released May 8, 2026 - Fixes a crash when keyword decoration is set to Parent Keyword with a blank value.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Keyword Decoration Crash:</strong> When "Parent Keyword" decoration was enabled but the value field was empty, Lightroom would throw an "Internal Error: Name must be a non empty string" dialog. The parent/prefix/suffix value is now validated and trimmed before use, and keyword creation falls back gracefully when the parent value is blank.</li>
+                    </ul>
+                </div>
+
+                <!-- v8.3.3 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.3.3 - Results Panel Scaling &amp; Ollama Language Fix</h3>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released May 7, 2026 - Results panel now resizes with the dialog; Ollama returns keywords in the correct language.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Results Panel Scaling:</strong> The metadata panel now properly grows and shrinks with the dialog window — fixed height/width constraints removed.</li>
+                        <li><strong>Ollama Keyword Language:</strong> A system-role message is now injected when a non-English response language is configured, so weaker Ollama models reliably return keywords and all fields in the requested language.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.3.2 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.3.2 - Results Window Height Fix</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released May 7, 2026 - Fixes metadata panel being too small in v8.3.1.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
