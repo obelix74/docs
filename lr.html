@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.2.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.3.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.4.2
+                    <i class="fas fa-download"></i> Download Plugin v8.4.3
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,25 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.4.3 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.4.3 - Updated AI Model Support</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released June 14, 2026 - New Gemini 3.x and GPT-4.1 models added; deprecated models removed.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>New Gemini models:</strong> Gemini 3.5 Flash (new stable flagship, now default), Gemini 3.1 Flash Lite (lightweight), Gemini 2.5 Flash Lite (budget). Gemini 2.0 Flash removed — shut down by Google.</li>
+                        <li><strong>New OpenAI models:</strong> GPT-4.1 (now default), GPT-4.1 Mini, GPT-4.1 Nano — all support vision with a 1M token context window. GPT-4 Turbo and GPT-4 Vision Preview removed as deprecated.</li>
+                        <li><strong>Auto-migration:</strong> Users on the discontinued Gemini 2.0 Flash are automatically moved to Gemini 3.5 Flash on next launch.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.4.2 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.4.2 - Fix Plugin Settings Blank Screen</h3>
-                        <span class="version-tag">LATEST</span>
+
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released June 14, 2026 - Correctly fixes the blank Plugin Settings screen from v8.4.0.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
