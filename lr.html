@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.4.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.5.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.4.4
+                    <i class="fas fa-download"></i> Download Plugin v8.4.5
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,25 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.4.5 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.4.5 - Reprocess Button &amp; Export Fix</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released July 5, 2026 - Reprocess a photo directly from the results dialog, plus an Export Results fix.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Reprocess button:</strong> Re-run AI analysis on the currently displayed photo directly from the results dialog. For Ollama, an "Active Model" dropdown lets you override the model for just that reprocess run.</li>
+                        <li><strong>Export Results fixed:</strong> Exporting results no longer aborts after writing only the CSV header when a field contains an unexpected value type; rows are now written independently so one bad row doesn't break the whole export.</li>
+                        <li><strong>Ollama Plugin Manager polish:</strong> Removed a remaining flash where "Enter model name manually" briefly ticked itself on dialog open, and the Custom Model field is now reliably disabled and cleared when unticked.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.4.4 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.4.4 - Ollama Model Switching &amp; Title Field Fixes</h3>
-                        <span class="version-tag">LATEST</span>
+
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released July 4, 2026 - Fixes for Ollama model selection and a Title field display glitch.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -941,7 +955,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.4.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.5.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
