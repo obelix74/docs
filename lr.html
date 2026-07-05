@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.3.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.4.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.4.3
+                    <i class="fas fa-download"></i> Download Plugin v8.4.4
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,24 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.4.4 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.4.4 - Ollama Model Switching &amp; Title Field Fixes</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released July 4, 2026 - Fixes for Ollama model selection and a Title field display glitch.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Ollama model switching fixed:</strong> Switching back to the first model in the list after using a different one no longer incorrectly enables "Enter model name manually" with the model name auto-populated into the Custom Model field. The saved model is now matched against the actual list of models fetched from the Ollama server.</li>
+                        <li><strong>Title field visibility fixed:</strong> Worked around a Lightroom UI rendering bug where the Title field didn't display its text after AI analysis on a single photo until the user moused over it.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.4.3 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.4.3 - Updated AI Model Support</h3>
-                        <span class="version-tag">LATEST</span>
+
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released June 14, 2026 - New Gemini 3.x and GPT-4.1 models added; deprecated models removed.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -928,7 +941,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.3.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.4.4.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
