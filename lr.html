@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.5.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.5.1.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.5.0
+                    <i class="fas fa-download"></i> Download Plugin v8.5.1
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,26 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.5.1 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.5.1 - Reprocess UX Polish</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released July 6, 2026 - Progress indication, collision prevention, and error-handling fixes for the new Reprocess button.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Progress indication:</strong> An inline status row now shows "Reprocessing..." (and the button relabels itself) while a reprocess is running.</li>
+                        <li><strong>No more collisions:</strong> All fields, the Prev/Next photo buttons, the Active Model dropdown, and the Reprocess/Apply/Export buttons are disabled while a reprocess is in flight, so repeated clicks can't queue or collide.</li>
+                        <li><strong>Clearer timeout/failure handling:</strong> If a model times out or returns no usable content, the dialog now shows an inline explanation instead of leaving every field blank.</li>
+                        <li><strong>Error dialog no longer hides behind the results dialog:</strong> Reprocess failures are now shown inline instead of in a second modal dialog that could render behind the results dialog and appear to freeze it.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.5.0 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.5.0 - Export Results Actually Fixed</h3>
-                        <span class="version-tag">LATEST</span>
+
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released July 5, 2026 - Root-cause fix for the Export Results CSV failure introduced in earlier versions.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -967,7 +982,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.5.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.5.1.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
