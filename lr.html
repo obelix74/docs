@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.6.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.6.1.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.6.0
+                    <i class="fas fa-download"></i> Download Plugin v8.6.1
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,24 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.6.1 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.6.1 - Location Metadata Fix</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released July 26, 2026 - Detected and manually entered locations now save to Lightroom.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Location now written to metadata:</strong> Detected or manually entered locations were being silently dropped because "Save location to IPTC metadata" defaulted to off. It now defaults on, and a one-time migration enables it for existing installs (a later manual toggle is preserved).</li>
+                        <li><strong>Correct location field:</strong> The location is now written only to the IPTC Location (Sublocation) field shown in Lightroom's Location metadata set, instead of also being written into City where it didn't belong.</li>
+                    </ul>
+                    <p style="color: var(--text-secondary); margin-top: 12px; font-size: 0.9em;">Note: Lightroom writes metadata to the catalog immediately; XMP sidecar files only update when you save metadata to file (⌘S / "Save Metadata to File", or the catalog's auto-write-XMP setting) — this applies to all fields.</p>
+                </div>
+
                 <!-- v8.6.0 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.6.0 - Dynamic Cloud Model Lists</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released July 26, 2026 - Live model discovery for OpenAI and Gemini, plus model switching when reprocessing.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -1008,7 +1021,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.6.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.6.1.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
