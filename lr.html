@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.7.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.7.1.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.7.0
+                    <i class="fas fa-download"></i> Download Plugin v8.7.1
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,23 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.7.1 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.7.1 - OpenAI gpt-5 / o-series Fix</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released August 2, 2026 - Newer OpenAI reasoning models now work.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>gpt-5 and o-series models fixed:</strong> Requests used the legacy <code>max_tokens</code> parameter, which the gpt-5 family and o-series models (e.g. o4-mini) reject with an "unsupported parameter" error. Requests now use <code>max_completion_tokens</code>, skip the unsupported custom temperature for reasoning models, and allow a larger token budget so responses aren't cut off.</li>
+                        <li><strong>Clearer error messages:</strong> When a login succeeds but the provider rejects the request (e.g. an unsupported model), the plugin now reports a provider error and suggests trying another model, instead of misleadingly blaming configuration or the network.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.7.0 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.7.0 - Add &amp; Edit Keywords</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released July 26, 2026 - Edit AI keywords and add your own, right in the plugin.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -1034,7 +1046,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.7.0.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.7.1.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
