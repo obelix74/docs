@@ -367,9 +367,9 @@
             <p>Automatically tag your photos with AI-powered captions, descriptions, and keywords using Google Gemini
                 AI, OpenAI GPT-4V, or local Ollama models directly in Adobe Lightroom Classic.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.9.1.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.10.0.zip"
                     class="cta-button">
-                    <i class="fas fa-download"></i> Download Plugin v8.9.1
+                    <i class="fas fa-download"></i> Download Plugin v8.10.0
                 </a>
                 <a href="https://exchange.adobe.com/apps/cc/204294" target="_blank" class="cta-button secondary">
                     <i class="fas fa-store"></i> Adobe Exchange
@@ -487,11 +487,24 @@
             <h2 class="section-title">Release Notes</h2>
             <div style="max-width: 900px; margin: 0 auto;">
 
+                <!-- v8.10.0 -->
+                <div class="release-note">
+                    <div class="release-header">
+                        <h3>Version 8.10.0 - Ollama Thinking Control</h3>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">Released October 25, 2026 - More control over Ollama reasoning models, and no more blank results when they run out of tokens.</p>
+                    <ul style="padding-left: 20px; color: var(--text-secondary);">
+                        <li><strong>Thinking setting:</strong> Ollama Configuration can now turn a model's thinking Off or On, or leave it to the model. Turning it off stops reasoning models such as qwen3-vl from spending their whole budget on thinking.</li>
+                        <li><strong>Max Response Tokens:</strong> The Ollama response limit (num_predict), previously fixed at 4096, is now adjustable from 256 to 32768.</li>
+                        <li><strong>No more blank results:</strong> If a model uses all its tokens on thinking and returns nothing, the plug-in retries once with thinking off, then reports a clear error instead of showing an empty results dialog.</li>
+                    </ul>
+                </div>
+
                 <!-- v8.9.1 -->
                 <div class="release-note">
                     <div class="release-header">
                         <h3>Version 8.9.1 - Results Dialog Fixes</h3>
-                        <span class="version-tag">LATEST</span>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 16px;">Released October 22, 2026 - Restores keyboard navigation in the results dialog text fields.</p>
                     <ul style="padding-left: 20px; color: var(--text-secondary);">
@@ -1085,7 +1098,7 @@
         <div class="container">
             <h2 class="section-title">Ready to Transform Your Workflow?</h2>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.9.1.zip"
+                <a href="https://github.com/obelix74/docs/raw/main/dist/ai-lr-tagimg-v8.10.0.zip"
                     class="cta-button">
                     <i class="fas fa-download"></i> Download Latest Version
                 </a>
